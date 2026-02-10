@@ -189,6 +189,10 @@
     <div class="bg"></div>
     <div class="overlay"></div>
     <div class="wrapper">
+         <button onclick="playSong()">click🎶</button>
+        <audio id="bgMusic" preload="auto">
+    <source src="Kabira.mp3" type="audio/mpeg">
+</audio>
         <div class="line">Oy sambhal ne ... ! Happy RoseDay 🌹🌹🌹</div>
        <div class="line">Apde mast parfect cuple lagiye ne aa photo ma...😁😁😁</div>
         <div class="line">dhabuu tantion na leti have hu toxic ne overpussesive nathi ryo have bs riva no ek shidho raj j chhu </div>
@@ -212,6 +216,12 @@
     </div>
 
     <script>
+        function playSong() {
+        const music = document.getElementById("bgMusic");
+        music.currentTime = 0;
+        music.volume = 0.9;
+        music.play();
+    }
         function createRose() {
             const rose = document.createElement("div");
             rose.className = "rose";
@@ -296,6 +306,7 @@
 
 
 </html>
+
 
 
 
